@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --green-color: #23856D;
+    --white-color: #FFFF;
+    --blue-color: #23A6F0;
+    --gold-color: #F3CD03;
+    --red-color: #E74040;
+    --heading-color: #252B42;
+    --writeUp-color: #737373;
+    --pale-color: #BDBDBD;
+    --page-color: #FFFFFF;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--page-color);
+}

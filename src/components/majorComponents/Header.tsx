@@ -13,14 +13,16 @@ function Header () {
                 </p>
             </div>
 
-            <div>
+            <div id='middle'>
                 <p>
                     Follow us and get a chance to win 80% off
                 </p>
             </div>
 
             <nav id='socials'>
-                <p>Follow us :</p>
+                <span>
+                    <p>Follow us :</p>
+                </span>
                 <a href="#"><i className="bi bi-instagram"></i></a>
                 <a href="#"><i className="bi bi-youtube"></i></a>
                 <a href="#"><i className="bi bi-facebook"></i></a>
