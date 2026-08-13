@@ -4,6 +4,8 @@
 import HeroSection from "../components/majorComponents/heroSection"
 import ProductSection from "../components/majorComponents/productSection"
 import BestServiceSection from '../components/majorComponents/bestServiceSection'
+import FeaturedPostSection from '../components/majorComponents/featuredPostSection'
+import RatingSection from "../components/majorComponents/ratingSection"
 
 function Home() {
   return (
@@ -11,6 +13,8 @@ function Home() {
           <HeroSection />
           <ProductSection />
           <BestServiceSection />
+          <FeaturedPostSection />
+          <RatingSection />
       </main>
   )
 }

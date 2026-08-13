@@ -1,0 +1,166 @@
+/* START */
+#featuredPost-section {
+    margin-top: 13%;
+    /* border: 1px solid red; */
+}
+
+#featuredPost-section #title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#title h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--blue-color);
+}
+
+#title h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    color: var(--blue-color);
+}
+
+/* FEATURED CARDS */
+#cards-wrapper {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    gap: .8rem;
+    margin-top: 80px;
+    width: clamp(20%, 90vw, 75%);
+    /* border: 1px solid red; */
+}
+
+#featuredCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    width: 50%;
+    height: 41rem;
+    box-shadow: 0px 0px 1px #737373;
+    /* border: 1px solid red; */
+}
+
+#image-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#featuredCard #image-wrapper img {
+    width: 100%;
+}
+
+#image-wrapper #new-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    width: 4rem;
+    padding: .5em;
+    border-radius: 3px;
+
+    font-size: .8rem;
+    font-weight: 700;
+
+}
+
+#source-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 15px;
+}
+
+#google {
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: var(--blue-color);
+}
+
+#trending, #new {
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: var(--writeUp-color);
+}
+
+#featuredCard h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--writeUp-color);
+    margin-left: 15px;
+}
+
+#featuredCard p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: var(--writeUp-color);
+    margin-left: 15px;
+}
+
+/* COMMENT WRAPPER */
+#comments-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-left: 15px;
+}
+
+#comments-wrapper #time {
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: var(--writeUp-color);
+}
+
+#time i {
+    color: var(--blue-color);
+}
+
+#comments-wrapper #comment {
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: var(--writeUp-color);
+}
+
+#comment i {
+    color: var(--green-color);
+}
+
+/* LEARN MORE */
+#featuredCard #learn-more {
+    margin-left: 15px;
+
+}
+#learn-more i {
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--blue-color);
+}
