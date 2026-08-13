@@ -17,7 +17,12 @@ import productIMG10 from '../../assets/images/productsIMG-10.png'
 // STYLES //
 import '../../Styles/Home/productSection.css'
 
+// LOAD MORE LOGIC //
+import { useState } from 'react'
+
 function ProductSection () {
+    // LOAD MORE LOGIC //
+    const [productsVisible, setProductsVisible] = useState(false)
     return (
         <section id='productSection'>
             <div id='title'>
@@ -128,7 +133,75 @@ function ProductSection () {
                     originalPrice='$16.48'
                     salePrice='$6.48'
                 />
+
+
+                {/* LOAD MORE PRODUCTS CARDS */}
+                {/* LOAD MORE PRODUCTS CARDS */}
+                {productsVisible && (
+                    <>
+                        {/* CARD 5 */}
+                        <ProductCard 
+                            image = {productIMG5}
+                            alt = 'Bestseller Product'
+                            title = 'Graphic Design'
+                            department='English Department'
+                            departmentLink='/english-department'
+                            originalPrice='$16.48'
+                            salePrice='$6.48'
+                        />
+                        {/* CARD 6 */}
+                        <ProductCard 
+                            image = {productIMG6}
+                            alt = 'Bestseller Product'
+                            title = 'Graphic Design'
+                            department='English Department'
+                            departmentLink='/english-department'
+                            originalPrice='$16.48'
+                            salePrice='$6.48'
+                        />
+                        {/* CARD 7 */}
+                        <ProductCard 
+                            image = {productIMG7}
+                            alt = 'Bestseller Product'
+                            title = 'Graphic Design'
+                            department='English Department'
+                            departmentLink='/english-department'
+                            originalPrice='$16.48'
+                            salePrice='$6.48'
+                        />
+                        {/* CARD 8 */}
+                        <ProductCard 
+                            image = {productIMG8}
+                            alt = 'Bestseller Product'
+                            title = 'Graphic Design'
+                            department='English Department'
+                            departmentLink='/english-department'
+                            originalPrice='$16.48'
+                            salePrice='$6.48'
+                        />
+                        {/* CARD 9 */}
+                        <ProductCard 
+                            image = {productIMG9}
+                            alt = 'Bestseller Product'
+                            title = 'Graphic Design'
+                            department='English Department'
+                            departmentLink='/english-department'
+                            originalPrice='$16.48'
+                            salePrice='$6.48'
+                        />
+                        
+                    </>
+                )}
             </div>
+
+            <button 
+                type='button' 
+                id='moreProducts-BTN'
+                onClick={() => setProductsVisible(!productsVisible)}
+                
+            >
+                {productsVisible ? 'HIDE PRODUCTS' : 'LOAD MORE PRODUCTS'}
+            </button>
         </section>
     )
 }

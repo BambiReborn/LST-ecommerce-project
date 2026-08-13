@@ -1,7 +1,7 @@
 /* BEGINING */
 #productSection {
     margin-top: 25%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #productSection #title {
@@ -41,10 +41,10 @@
     display: grid;
     grid-template-columns: repeat(5, 2fr);
     justify-self: center;
-    gap: 2rem;
+    gap: 2.5rem;
     margin-top: 50px;
     width: clamp(20%, 90vw, 75%);
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 article {
@@ -54,7 +54,7 @@ article {
     align-items: center;
     gap: 1rem;
     max-width: 30rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 article img {
@@ -99,4 +99,120 @@ article #price-wrapper {
     line-height: 24px;
     letter-spacing: 0.1px;
     color: var(--green-color);
+}
+
+#moreProducts-BTN {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    width: 15rem;
+    padding: .8em 1em;
+    border-radius: 5px;
+    border: 1px solid var(--blue-color);
+    background: var(--page-color);
+    color: var(--blue-color);
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+
+}
+
+#moreProducts-BTN:hover {
+    background-color: #4a82c20d;
+    box-shadow: 0px 0px 3px #737373;
+    border: 1px solid #4A82C2;
+    color: var(--blue-color);
+}
+
+
+
+/*===RESPONSIVE SCREENS==*/
+@media (max-width: 1300px) {
+    /* TITLE */
+    #title h4 {
+        font-size: 1.3rem;
+    }
+
+    #title h3 {
+        font-size: 1.5rem;
+    }
+
+    #title p {
+        font-size: 1rem;
+    }
+
+    article h5 {
+        font-size: .8rem;
+    }
+
+    article a {
+        font-size: .7rem;
+    }
+
+    #originalPrice, #salePrice {
+        font-size: .7rem;
+    }
+}
+
+
+/* ===SCREEN 1030=== */
+@media (max-width: 1030px) {
+    article h5 {
+        font-size: .7rem;
+    }
+
+    article a {
+        font-size: .6rem;
+    }
+
+    #originalPrice, #salePrice {
+        font-size: .6rem;
+    }
+}
+
+/* ==SCREEN 1024== */
+@media (max-width: 1024px) {
+    #productSection {
+        margin-top: 15%;
+    }
+}
+
+/* ==SCREEN 916== */
+@media (max-width: 916px) {
+    article h5 {
+        font-size: .65rem;
+        text-wrap: wrap;
+        text-align: center;
+    }
+
+    article a {
+        font-size: .6rem;
+        text-wrap: wrap;
+        text-align: center;
+    }
+}
+
+/* ===SCREEN 768=== */
+@media (max-width: 768px) {
+    #productSection {
+        margin-top: 8%;
+    }
+
+    #title h4 {
+        font-size: 1.1rem;
+    }
+
+    #title h3 {
+        font-size: 1.3rem;
+    }
+
+    #title p {
+        font-size: .8rem;
+    }
 }
