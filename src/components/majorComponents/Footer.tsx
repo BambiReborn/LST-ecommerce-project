@@ -1,9 +1,10 @@
 // FOOTER //
+import '../../Styles/Home/Footer.css'
 
 function Footer () {
     return (
         <footer>
-            {/* ==================== FOOTER TOP ==================== */}
+            {/* FOOTER TOP */}
             <div className="footer-top">
                 <div className="footer-logo">
                 <h2>Bandage</h2>
@@ -24,7 +25,7 @@ function Footer () {
                 </div>
             </div>
 
-            {/* ==================== FOOTER MAIN ==================== */}
+            {/*FOOTER MAIN */}
             <div className="footer-main">
 
                 {/* Company Info */}
@@ -130,7 +131,7 @@ function Footer () {
 
             </div>
 
-            {/* ==================== FOOTER BOTTOM ==================== */}
+            {/* FOOTER BOTTOM*/}
             <div className="footer-bottom">
                 <p>Made With Love By Finland All Right Reserved</p>
             </div>

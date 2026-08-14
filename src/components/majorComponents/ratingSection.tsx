@@ -13,31 +13,66 @@ import aboutUsIMG9 from '../../assets/images/aboutUS-9.png'
 // RATING IMAGE //
 import ratingIMG from '../../assets/images/aboutRatingIMG.png'
 
+// STYLES //
+import '../../Styles/Home/ratingSection.css'
 
 
 function RatingSection () {
     return (
         <section id='rating-section'>
-            <div id='text-wrapper'>
-                <h3>What they say about us</h3>
-                <img src={ratingIMG} alt="Rating" />
-                <span id='rate-star-wrapper'>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    {/* EMPTY */}
-                    <i className="bi bi-star"></i>
-                </span>
+            <div id='rating-content-wrapper'>
+                <div id='text-wrapper'>
+                    <h3>What they say about us</h3>
+                    <img src={ratingIMG} alt="Rating" />
+                    <span id='rate-star-wrapper'>
+                        <i className="bi bi-star-fill"></i>
+                        <i className="bi bi-star-fill"></i>
+                        <i className="bi bi-star-fill"></i>
+                        <i className="bi bi-star-fill"></i>
+                        {/* EMPTY */}
+                        <i className="bi bi-star"></i>
+                    </span>
 
-                <p>
-                    Slate helps you see how many more days you need to work to <br />
-                    reach your financial goal.
-                </p>
-                <div id='info'>
-                    <h6>
-                        <Link to="/reginaMiles">Regina Miles</Link>
-                    </h6>
+                    <p>
+                        Slate helps you see how many more days you need to work to <br />
+                        reach your financial goal.
+                    </p>
+                    <div id='info'>
+                        <Link to="/reginaMiles" id='name'>Regina Miles</Link>
+                        
+                        <h6 id='role'>Designer</h6>
+                    </div>
+                </div>
+
+                {/* IMAGE SIDE */}
+                <div id='rating-image-wrapper'>
+                    <div className='IMG-cover'>
+                        <img src={aboutUsIMG1} alt="Cool" />
+                    </div>
+                    <div className='IMG-cover'>
+                        <img src={aboutUsIMG2} alt="Cool" />
+                    </div>
+                    <div className='IMG-cover'>
+                        <img src={aboutUsIMG3} alt="Cool" />
+                    </div>
+                    <div className='IMG-cover'>
+                        <img src={aboutUsIMG4} alt="Cool" />
+                    </div>
+                    <div className='IMG-cover'>
+                        <img src={aboutUsIMG5} alt="Cool" />
+                    </div>
+                    <div className='IMG-cover'>
+                        <img src={aboutUsIMG6} alt="Cool" />
+                    </div>
+                    <div className='IMG-cover'>
+                        <img src={aboutUsIMG7} alt="Cool" />
+                    </div>
+                    <div className='IMG-cover'>
+                        <img src={aboutUsIMG8} alt="Cool" />
+                    </div>
+                    <div className='IMG-cover'>
+                        <img src={aboutUsIMG9} alt="Cool" />
+                    </div>
                 </div>
             </div>
         </section>

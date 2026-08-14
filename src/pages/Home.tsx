@@ -6,6 +6,7 @@ import ProductSection from "../components/majorComponents/productSection"
 import BestServiceSection from '../components/majorComponents/bestServiceSection'
 import FeaturedPostSection from '../components/majorComponents/featuredPostSection'
 import RatingSection from "../components/majorComponents/ratingSection"
+import BetterExperienceSection from "../components/majorComponents/betterExperienceSection"
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
           <BestServiceSection />
           <FeaturedPostSection />
           <RatingSection />
+          <BetterExperienceSection />
       </main>
   )
 }
