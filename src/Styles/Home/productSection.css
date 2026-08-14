@@ -200,19 +200,25 @@ article #price-wrapper {
 
 /* ===SCREEN 768=== */
 @media (max-width: 768px) {
+    /*==PRODUCT SECTION==*/
     #productSection {
-        margin-top: 8%;
+        margin-top: 30% !important;
     }
 
-    #title h4 {
-        font-size: 1.1rem;
+    #productSection #title h4 {
+        font-size: 1rem;
     }
 
-    #title h3 {
-        font-size: 1.3rem;
+    #productSection #title h3 {
+        font-size: 1.2rem;
     }
 
-    #title p {
+    #productSection #title p {
         font-size: .8rem;
+    }
+
+    /*== PRODUCTS CARDS ==*/
+    #card-wrapper {
+        grid-template-columns: repeat(4, 3fr);
     }
 }

@@ -20,13 +20,15 @@ function Header () {
             </div>
 
             <nav id='socials'>
-                <span>
+                <span id='span1'>
                     <p>Follow us :</p>
                 </span>
-                <a href="#"><i className="bi bi-instagram"></i></a>
-                <a href="#"><i className="bi bi-youtube"></i></a>
-                <a href="#"><i className="bi bi-facebook"></i></a>
-                <a href="#"><i className="bi bi-twitter"></i></a>
+                <span id='span2'>
+                    <a href="#"><i className="bi bi-instagram"></i></a>
+                    <a href="#"><i className="bi bi-youtube"></i></a>
+                    <a href="#"><i className="bi bi-facebook"></i></a>
+                    <a href="#"><i className="bi bi-twitter"></i></a>
+                </span>
             </nav>
         </header>
     );

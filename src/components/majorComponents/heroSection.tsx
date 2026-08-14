@@ -13,7 +13,7 @@ import '../../Styles/Home/HeaderAndHero.css'
 function HeroSection () {
     return (
         <section id='heroSection'>
-            {/* HERO-TOP */}
+            {/* DESKTOP VIEW HERO-TOP */}
             <div id='heroTop'>
                 <h3>Bandage</h3>
 
@@ -47,6 +47,44 @@ function HeroSection () {
                     </div>
                     
                 </div>
+            </div>
+
+            {/* ==== MOBILE VIEW ===*/}
+            <div id="mobile-nav">
+
+                <div id="mobile-nav-top">
+
+                    <h3>Bandage</h3>
+
+                    <div id="mobile-nav-icons">
+                        <Link to="/search" aria-label="Search">
+                            <i className="bi bi-search"></i>
+                        </Link>
+
+                        <Link to="/cart" aria-label="Cart">
+                            <i className="bi bi-cart3"></i>
+                        </Link>
+
+                        <button type="button" aria-label="Open menu">
+                            <i className="bi bi-list"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <nav id="mobile-nav-links">
+
+                    <Link to="/">Home</Link>
+
+                    <Link to="/shop">Product</Link>
+
+                    <Link to="/pricing">Pricing</Link>
+
+                    <Link to="/contact">Contact</Link>
+
+                </nav>
+
             </div>
 
             {/* HERO-IMAGES */}

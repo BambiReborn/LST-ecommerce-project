@@ -12,11 +12,11 @@ function Home() {
   return (
       <main>
           <HeroSection />
-          <ProductSection />
+          {/* <ProductSection />
           <BestServiceSection />
           <FeaturedPostSection />
           <RatingSection />
-          <BetterExperienceSection />
+          <BetterExperienceSection /> */}
       </main>
   )
 }
