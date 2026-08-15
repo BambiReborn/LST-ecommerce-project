@@ -949,7 +949,10 @@ header {
 
     #mobile-nav {
         display: block;
+        /* justify-self: center; */
+        align-self: center;
         width: 100%;
+        /* border: 1px solid red; */
     }
 
 
@@ -1138,7 +1141,7 @@ header {
 
     #div1 {
         justify-self: center;
-        max-width: 80%;
+        max-width: 100%;
         min-height: 15rem;
         /* border: 1px solid red; */
     }
@@ -1179,6 +1182,7 @@ header {
         display: grid;
         justify-self: center;
         gap: 1rem;
+        width: 100%;
         /* border: 1px solid red; */
     }
 

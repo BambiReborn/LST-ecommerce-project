@@ -226,6 +226,11 @@ footer {
     .footer-contact {
         grid-column: span 2;
     }
+
+    .newsletter {
+        justify-self: center;
+        width: 90%;
+    }
 }
 
 
@@ -246,5 +251,10 @@ footer {
 
     .newsletter {
         max-width: 100%;
+    }
+
+    .footer-bottom p {
+        text-align: center;
+        width: 10rem;
     }
 }

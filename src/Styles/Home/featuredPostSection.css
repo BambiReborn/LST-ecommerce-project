@@ -4,6 +4,10 @@
     /* border: 1px solid red; */
 }
 
+#featuredPost-section #mobile-title {
+    display: none;
+}
+
 #featuredPost-section #title {
     display: flex;
     flex-direction: column;
@@ -11,7 +15,7 @@
     gap: 1rem;
 }
 
-#title h6 {
+#featuredPost-section #title h6 {
     font-size: 1rem;
     font-weight: 700;
     line-height: 24px;
@@ -19,7 +23,7 @@
     color: var(--blue-color);
 }
 
-#title h2 {
+#featuredPost-section #title h2 {
     font-size: 2rem;
     font-weight: 700;
     line-height: 50px;
@@ -47,7 +51,7 @@
     gap: 2rem;
     width: 50%;
     height: 41rem;
-    box-shadow: 0px 0px 1px #737373;
+    box-shadow: 0px 0px 2px #BDBDBD;
     /* border: 1px solid red; */
 }
 
@@ -163,4 +167,108 @@
     font-size: .9rem;
     font-weight: 700;
     color: var(--blue-color);
+}
+
+
+/*===RESPONSIVE LAYOUT===*/
+
+/*SMALL PC*/
+@media (max-width: 1024px) {
+
+    #cards-wrapper {
+        /* display: grid; */
+        /* gap: 3rem; */
+        width: 75%;
+        /* border: 1px solid red; */
+    }
+
+    #featuredCard {
+        width: 100%;
+    }
+
+    #featuredCard h3 {
+        font-size: 1rem;
+    }
+
+    #featuredCard p {
+        font-size: .9rem;
+    }
+
+    #comments-wrapper #comment, #comments-wrapper #time {
+        font-size: .6rem;
+    }
+}
+
+/*TABLET SCREEN*/
+@media (max-width: 768px) {
+
+    #cards-wrapper {
+        display: grid;
+        gap: 3rem;
+        width: 75%;
+        /* border: 1px solid red; */
+    }
+
+    #featuredCard {
+        width: 100%;
+    }
+
+    #featuredCard h3 {
+        font-size: 1.2rem;
+    }
+
+    #featuredCard p {
+        font-size: 1rem;
+    }
+}
+
+/*MOBILE SCREENS*/
+@media (max-width: 426px) {
+    #featuredPost-section #cards-wrapper {
+    display: grid;
+    gap: 3rem;
+    /* border: 1px solid red; */
+    }
+
+    #featuredCard {
+        width: 100%;
+    }
+
+    /* DESKTOP TITLE */
+    #featuredPost-section #title {
+        display: none;
+    }
+
+    /* MOBIE TITLE */
+    #featuredPost-section #mobile-title {
+        display: block;
+        justify-self: center;
+        text-align: center;
+        /* gap: 1.5rem !important; */
+    }
+
+    #featuredPost-section #mobile-title h6 {
+        font-size: .8rem;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: var(--blue-color);
+        margin-bottom: 15px;
+    }
+
+    #featuredPost-section #mobile-title h2 {
+        font-size: 2.1rem;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.2px;
+        color: var(--heading-color);
+        width: 13rem;
+        /* border: 1px solid red; */
+    }
+
+    /*CARD P */
+    #featuredCard p {
+        font-size: .9rem;
+    }
+
 }

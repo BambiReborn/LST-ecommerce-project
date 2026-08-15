@@ -222,3 +222,38 @@ article #price-wrapper {
         grid-template-columns: repeat(4, 3fr);
     }
 }
+
+
+/*==MOBILE SCREENS==*/
+@media (max-width: 426px) {
+    #productSection {
+        margin-top: 320% !important;
+    }
+
+    #productSection #title {
+        gap: .1rem;
+    }
+
+    #productSection #title h4 {
+        display: none;
+    }
+
+    #productSection #title h3 {
+        width: 9rem;
+        text-align: center;
+        /* word-break: break-all;
+        overflow-wrap: break-word; */
+    }
+
+    #productSection #title p {
+        width: 15rem;
+        text-align: center;
+    }
+
+    /* PRODUCT CARDS*/
+    #card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 10fr);
+        width: 80%;
+    }
+}

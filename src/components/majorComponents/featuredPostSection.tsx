@@ -13,6 +13,13 @@ import '../../Styles/Home/featuredPostSection.css'
 function FeaturedPostSection () {
     return (
         <section id='featuredPost-section'>
+            {/* MOBILE TITLE */}
+            <div id='mobile-title'>
+                <h6>Practice Advice</h6>
+                <h2>Featured Products</h2>
+            </div>
+
+            {/* DESKTOP TITLE */}
             <div id='title'>
                 <h6>Practice Advice</h6>
                 <h2>Featured Posts</h2>

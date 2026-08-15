@@ -102,3 +102,34 @@
 #rating-image-wrapper img {
     width: 100%;
 }
+
+
+/*==RESPONSIVE LAYOUT==*/
+
+/*TABLET SCREEN */
+@media (max-width: 768px) {
+    #rating-content-wrapper {
+        width: 80%;
+        display: grid;
+        /* border: 1px solid red; */
+    }
+
+    #rating-content-wrapper #text-wrapper {
+        width: 100%;
+    }
+
+    #rating-content-wrapper #rating-image-wrapper {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 426px) {
+    #rating-content-wrapper #text-wrapper h3 {
+        font-size: 1.2rem;
+    }
+
+    #rating-content-wrapper #text-wrapper p {
+        font-size: .8rem;
+    }
+}

@@ -33,7 +33,11 @@
     color: var(--blue-color);
 }
 
-#write-up-wrapper h2 {
+#better-experience-section #write-up-wrapper #mobile-h2 {
+    display: none;
+}
+
+#write-up-wrapper #desktop-h2 {
     text-align: center;
     font-size: 2.5rem;
     line-height: 50px;
@@ -41,7 +45,11 @@
     color: var(--heading-color);
 }
 
-#write-up-wrapper p {
+#write-up-wrapper #mobile-p {
+    display: none;
+}
+
+#write-up-wrapper #desktop-p {
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
@@ -83,3 +91,46 @@
     text-shadow: 0px 0px 5px var(--heading-color);
 }
 
+
+
+/*==RESPONSIVE LAYOUT==*/
+
+/*MOBILE SCREEN*/
+@media (max-width:426px) {
+    #better-experience-section #write-up-wrapper  {
+        width: 80%;
+        /* border: 1px solid red; */
+    }
+
+    #better-experience-section #write-up-wrapper h6 {
+        font-size: .8rem;
+
+    }
+
+    #better-experience-section #write-up-wrapper #desktop-h2 {
+        display: none;
+    }
+
+    #better-experience-section #write-up-wrapper #mobile-h2 {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 40px;
+        letter-spacing: 0.2px;
+        color: var(--heading-color);
+    }
+
+    #better-experience-section #write-up-wrapper #desktop-p {
+        display: none;
+    }
+
+    #better-experience-section #write-up-wrapper #mobile-p {
+        display: block;
+        text-align: center;
+        font-size: .8rem;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: var(--writeUp-color);
+    } 
+}

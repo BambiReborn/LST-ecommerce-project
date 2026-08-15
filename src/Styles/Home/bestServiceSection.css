@@ -81,3 +81,41 @@
     letter-spacing: 0.2px;
     color: var(--writeUp-color);
 }
+
+
+/*==RESPONSIVE LAYOUT==*/
+
+/*==MOBILE SCREENS==*/
+@media (max-width: 426px) {
+    #bestService-section {
+        margin-top: 25%;
+    }
+
+    #bestService-section #title h4 {
+        display: block;
+        font-size: 1rem;
+    }
+
+    #bestService-section #title h3 {
+        font-size: 1.3rem;
+    }
+
+    #bestService-section #title p {
+        width: 15rem;
+        text-align: center;
+        font-size: .8rem;
+    }
+
+    /*==SERVICE WRAPPER==*/
+    #services-wrapper {
+        display: grid;
+        justify-self: center;
+        /* border: 1px solid red; */
+    }
+
+    .best-services {
+        width: 100%;
+        justify-self: center;
+        /* border: 1px solid red; */
+    }
+}
