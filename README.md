@@ -6,7 +6,7 @@ A responsive shopping cart page built for the **Learnable Front End Standardisat
 
 ## 🔗 Live Demo
 Click below to access the live site:  
-[LST sample E-Commerce](lst-sample-e-commerce.netlify.app)
+[LST sample E-Commerce](https://lst-sample-e-commerce.netlify.app)
 
 ---
 
