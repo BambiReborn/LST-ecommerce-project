@@ -1,7 +1,10 @@
 // IMPORTS //
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
+import type { RootState } from '../../app/store'
 import { addToCart } from '../../features/cart/cartSlice'
+import { toggleWishlist } from '../../features/wishlist/wishlistSlice'
 
 import '../../Styles/Home/productSection.css'
 
@@ -53,6 +56,14 @@ function ProductCard({
     }
 
 
+    function handleToggleWishlist() {
+        dispatch(toggleWishlist(id))
+    }
+
+    const isLiked = useSelector(function (state: RootState) {
+        return state.wishlist.items.includes(id)
+    })
+
     return (
         <article className="product-card">
 
@@ -65,7 +76,7 @@ function ProductCard({
                 />
 
 
-                {/* HOVER / CLICK ACTIONS */}
+                {/* HOVER  CLICK ACTIONS */}
                 <div className="product-actions">
 
                     <button
@@ -81,8 +92,11 @@ function ProductCard({
                         type="button"
                         aria-label="Like product"
                         id="like-product-btn"
+                        onClick={handleToggleWishlist}
                     >
-                        <i className="bi bi-heart"></i>
+                        <i
+                            className={`bi ${isLiked ? 'bi-heart-fill liked' : 'bi-heart'}`}
+                        ></i>
                     </button>
 
                 </div>

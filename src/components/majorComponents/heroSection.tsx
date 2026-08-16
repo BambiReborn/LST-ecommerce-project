@@ -1,6 +1,9 @@
 // IMPORTS //
 import { Link } from 'react-router-dom';
 
+import { useSelector } from 'react-redux'
+import type { RootState } from '../../app/store'
+
 // IMAGES //
 import furnitureIMG1 from '../../assets/images/furnitureIMG-1.png'
 import furnitureIMG2 from '../../assets/images/furnitureIMG-2.png'
@@ -11,6 +14,25 @@ import furnitureIMG4 from '../../assets/images/furnitureIMG-4.png'
 import '../../Styles/Home/HeaderAndHero.css'
 
 function HeroSection () {
+    // WISHLIST UPDATE //
+    const cartItems = useSelector(function (state: RootState) {
+    return state.cart.items
+    })
+
+    const wishlistItems = useSelector(function (state: RootState) {
+        return state.wishlist.items
+    })
+
+    const cartItemCount = cartItems.reduce(
+        function (total, item) {
+            return total + item.quantity
+        },
+        0
+    )
+
+    const wishlistItemCount = wishlistItems.length
+
+
     return (
         <section id='heroSection'>
             {/* DESKTOP VIEW HERO-TOP */}
@@ -39,11 +61,35 @@ function HeroSection () {
                             <Link to="/register">Register</Link>
                         </nav>
 
-                        <span>
+                        <span id="header-actions">
+
+                            {/* SEARCH */}
                             <i className="bi bi-search"></i>
-                            <i className="bi bi-cart"></i>
-                            <i className="bi bi-heart"></i>
+
+
+                            {/* CART */}
+                            <span className="header-action">
+                                <Link to="/cart" aria-label="Shopping cart">
+                                    <i className="bi bi-cart"></i>
+
+                                    <span className="action-count">
+                                        {cartItemCount}
+                                    </span>
+                                </Link>
+                            </span>
+
+
+                            {/* WISHLIST */}
+                            <span className="header-action">
+                                <i className="bi bi-heart"></i>
+
+                                <span className="action-count">
+                                    {wishlistItemCount}
+                                </span>
+                            </span>
+
                         </span>
+
                     </div>
                     
                 </div>

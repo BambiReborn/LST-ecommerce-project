@@ -12,6 +12,9 @@ import {
 
 import { useGetProductsQuery } from '../services/productsApi'
 
+// STYLING //
+import '../Styles/Cart.css'
+
 
 function Cart() {
 
@@ -87,11 +90,11 @@ function Cart() {
     return (
         <main>
 
-            <h1>Your Cart</h1>
+            <h1 className="cart-page-title">Your Cart</h1>
 
 
             {/* CART ITEMS */}
-            <section>
+            <section className="cart-section">
 
                 {validCartProducts.map(function (item) {
 
@@ -101,14 +104,17 @@ function Cart() {
 
 
                     return (
-                        <article key={item.product.id}>
+                        <article 
+                            key={item.product.id}
+                            className="cart-item"
+                        >
                             <img
                                 src={item.product.thumbnail}
                                 alt={item.product.title}
                                 width="100"
                             />
 
-                            <div>
+                            <div className="cart-item-info">
 
                                 <h2>
                                     {item.product.title}
@@ -120,17 +126,18 @@ function Cart() {
 
 
                                 {/* QUANTITY */}
-                                <div>
+                                <div className='quantity-controls'>
                                     <button
                                         type="button"
                                         onClick={function () {
                                             dispatch(decrementQuantity(item.product!.id))
                                         }}
+                                        className='decrease-cart-item-btn'
                                     >
                                         −
                                     </button>
 
-                                    <span>
+                                    <span className='item-quantity'>
                                         {item.quantity}
                                     </span>
 
@@ -139,6 +146,7 @@ function Cart() {
                                         onClick={function () {
                                             dispatch(incrementQuantity( item.product!.id))
                                         }}
+                                        className='increase-cart-item-btn'
                                     >
                                         +
                                     </button>
@@ -152,6 +160,7 @@ function Cart() {
                                     onClick={function () {
                                         dispatch(removeFromCart(item.product!.id))
                                     }}
+                                    className='remove-cart-item'
                                 >
                                     Remove
                                 </button>
@@ -166,7 +175,7 @@ function Cart() {
 
 
             {/* CART SUMMARY */}
-            <section>
+            <section className='cart-summary'>
 
                 <h2>Cart Summary</h2>
 

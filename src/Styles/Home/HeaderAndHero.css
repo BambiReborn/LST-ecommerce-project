@@ -56,6 +56,7 @@ header {
     flex-direction: column;
     height: 80vh;
 }
+
 /* HERO-TOP */
 #mobile-nav {
     display: none;
@@ -144,6 +145,26 @@ header {
     color: var(--blue-color);
 }
 
+
+#header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-action {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.action-count {
+    position: absolute;
+    top: -0.6rem;
+    right: -0.7rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+}
 
 /* HERO IMAGES */
 #main-wrapper {

@@ -112,6 +112,11 @@
     font-size: 1rem;
     font-weight: 700;
 }
+
+#like-product-btn .liked {
+    color: var(--red-color);
+}
+
 /* ACTIONS HOVER */
 .product-actions {
     opacity: 0;
