@@ -82,7 +82,12 @@ src/
 ├── main.tsx  
 ├── index.css  
 ├── assets/  
+│   ├── hero.png  
+│   ├── react.svg  
+│   ├── vite.svg  
 │   └── images/  
+├── app/  
+│   └── store.ts  
 ├── components/  
 │   ├── commonComponents/  
 │   │   ├── featuredPostCard.tsx  
@@ -96,16 +101,25 @@ src/
 │       ├── heroSection.tsx  
 │       ├── productSection.tsx  
 │       └── ratingSection.tsx  
+├── features/  
+│   ├── cart/  
+│   ├── compare/  
+│   ├── likes/  
+│   └── wishlist/  
 ├── pages/  
 │   ├── Home.tsx  
 │   ├── About.tsx  
 │   ├── Blog.tsx  
+│   ├── Cart.tsx  
 │   ├── Contact.tsx  
 │   ├── Pages.tsx  
 │   ├── Shop.tsx  
+│   ├── wishlist.tsx  
 │   └── accountFlow/  
 │       ├── Login.tsx  
 │       └── Register.tsx  
+├── services/  
+│   └── productsApi.ts  
 └── Styles/  
 	└── Home/  
 		├── bestServiceSection.css  
