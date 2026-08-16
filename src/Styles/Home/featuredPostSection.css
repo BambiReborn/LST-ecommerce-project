@@ -161,9 +161,11 @@
 /* LEARN MORE */
 #featuredCard #learn-more {
     margin-left: 15px;
-
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--writeUp-color);
 }
-#learn-more i {
+#featuredCard #learn-more i {
     font-size: .9rem;
     font-weight: 700;
     color: var(--blue-color);
