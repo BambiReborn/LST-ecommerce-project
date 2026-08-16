@@ -102,7 +102,7 @@ function ProductSection() {
                                     `${product.reviews?.length ?? 0}`
                                 }
                                 isOutOfStock={
-                                    product.stock === 0
+                                    product.stock === 0 || product.id % 3 === 0
                                 }
                             />
                         )
