@@ -88,29 +88,19 @@ function ProductSection() {
                         return (
                             <ProductCard
                                 key={product.id}
-
+                                id={product.id}
                                 image={product.thumbnail}
-
                                 alt={product.title}
-
                                 title={product.title}
-
                                 department={product.category}
-
                                 departmentLink={`/shop/${product.id}`}
-
                                 originalPrice={`$${product.price.toFixed(2)}`}
-
                                 salePrice={`$${discountedPrice.toFixed(2)}`}
-
                                 discount={`-${product.discountPercentage}%`}
-
                                 rating={product.rating}
-
                                 reviewCount={
                                     `${product.reviews?.length ?? 0}`
                                 }
-
                                 isOutOfStock={
                                     product.stock === 0
                                 }
